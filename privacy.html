@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- لا طلبات خارجية إطلاقاً: لا خطوط ولا سكربتات ولا صور. السطر التالي يفرض ذلك على المتصفّح نفسه. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="سياسة الخصوصية لتطبيق زرعة: لا حساب ولا تحليلات ولا إعلانات، والتطبيق لا يرسل بياناتك إلى أي جهة. Zaraah Privacy Policy: no account, no analytics, no ads; the app never sends your data anywhere.">
+  <link rel="icon" href="data:,">
+  <title>سياسة الخصوصية · زرعة | Zaraah Privacy Policy</title>
+  <style>
+    /* ألوان «زرعة» من src/theme/theme.ts: بيج دافئ وأخضر غابة نهاراً، وحبري عميق ليلاً. */
+    :root {
+      --bg: #F9F8F3;
+      --surface: #FFFFFF;
+      --sunken: #EFEDE4;
+      --text-strong: #1E3A2B;
+      --text-body: #3D5145;
+      --text-muted: #71857A;
+      --primary: #37835C;
+      --link: #2A6949;
+      --tint: #EEF6F0;
+      --border: #DFDACD;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101713;
+        --surface: #18211B;
+        --sunken: #222E26;
+        --text-strong: #F2F6F3;
+        --text-body: #C3D0C8;
+        --text-muted: #8A9A91;
+        --primary: #559F77;
+        --link: #7FBD98;
+        --tint: #222E26;
+        --border: #2F3D34;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text-body);
+      /* خطوط النظام وحدها: لا Google Fonts ولا أي ملفّ يُحمَّل من الشبكة. */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Geeza Pro", "Noto Naskh Arabic", Tahoma, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+    .top {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 20px 16px 8px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px 16px;
+    }
+    .brand {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-strong);
+    }
+    .brand .sep { color: var(--primary); }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; }
+    nav a {
+      display: inline-block;
+      padding: 4px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--link);
+      font-size: 15px;
+      text-decoration: none;
+    }
+    nav a:hover, nav a:focus-visible { background: var(--tint); }
+    main { max-width: 760px; margin: 0 auto; padding: 8px 16px 48px; }
+    article {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 24px 20px;
+      margin: 16px 0 24px;
+    }
+    article[dir="rtl"] { text-align: right; }
+    article[dir="ltr"] { text-align: left; }
+    h1 {
+      margin: 0 0 4px;
+      font-size: 26px;
+      line-height: 1.5;
+      color: var(--text-strong);
+    }
+    h2 {
+      margin: 28px 0 6px;
+      font-size: 19px;
+      line-height: 1.5;
+      color: var(--text-strong);
+    }
+    p { margin: 0 0 10px; }
+    .date { color: var(--text-muted); font-size: 15px; }
+    .intro { margin-top: 12px; }
+    ul { margin: 0 0 10px; padding-inline-start: 22px; }
+    li { margin-bottom: 6px; }
+    li::marker { color: var(--primary); }
+    a { color: var(--link); text-underline-offset: 3px; }
+    a:focus-visible, nav a:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .contact a {
+      font-size: 19px;
+      font-weight: 700;
+      unicode-bidi: isolate;
+      word-break: break-all;
+    }
+    @media (min-width: 600px) {
+      article { padding: 32px 36px; }
+      h1 { font-size: 30px; }
+    }
+
+  </style>
+</head>
+<body>
+  <header class="top">
+    <p class="brand"><span lang="ar">زرعة</span> <span class="sep" aria-hidden="true">·</span> <span lang="en" dir="ltr">Zaraah</span></p>
+    <nav aria-label="التنقّل · Navigation">
+      <a href="#ar" lang="ar">العربية</a>
+      <a href="#en" lang="en" dir="ltr">English</a>
+      <a href="support.html" lang="ar">الدعم</a>
+      <a href="support.html#en" lang="en" dir="ltr">Support</a>
+    </nav>
+  </header>
+  <main>
+    <article id="ar" lang="ar" dir="rtl">
+      <h1>سياسة الخصوصية لتطبيق «زرعة»</h1>
+      <p class="date">تاريخ السريان: 1 نوفمبر 2026</p>
+      <p class="intro">«زرعة» تطبيق للذكر والتسبيح، فيه بستان ينمو بمواظبتك، ومواقيت للصلاة، وبوصلة للقبلة. تشرح هذه الصفحة ما يحفظه التطبيق على جهازك، ولماذا يطلب كل إذن، وما لا يفعله أبداً. والخلاصة أن التطبيق لا يرسل شيئاً من بياناتك إلى مطوّره ولا إلى أي جهة أخرى.</p>
+      <section id="ar-not-collected">
+        <h2>ما لا يجمعه التطبيق</h2>
+        <ul>
+          <li>لا حساب ولا تسجيل دخول، فأنت تستعمل التطبيق دون أن تعطيه اسماً أو بريداً أو رقم هاتف.</li>
+          <li>لا تحليلات ولا إعلانات ولا تتبّع، ولا أدوات لتقارير الأعطال داخل التطبيق.</li>
+          <li>ليس في التطبيق أي ميزة ترسل بيانات عبر الإنترنت أو تستقبلها منه، فهو يعمل كاملاً دون اتصال.</li>
+          <li>لا نبيع بياناتك ولا نشاركها، ولا نطّلع على شيء مما تحفظه في التطبيق، لأن التطبيق لا يرسله إلينا.</li>
+          <li>إن سمحتَ في إعدادات جهازك بمشاركة بيانات التشخيص مع المطوّرين، فقد تعرض علينا Apple أو Google تقارير أعطال لا تحدّد هويتك (نوع الجهاز وإصدار النظام وموضع العطل)، ولا تتضمّن شيئاً مما تحفظه في التطبيق.</li>
+        </ul>
+      </section>
+      <section id="ar-stored">
+        <h2>ما يُحفظ على جهازك</h2>
+        <p>يحفظ التطبيق ما يلي في قاعدة بيانات محلية على جهازك، ليتذكّر تقدّمك من مرة إلى أخرى:</p>
+        <ul>
+          <li>قائمة الأذكار، ومنها نصّ أي ذكر تضيفه بنفسك كما كتبته.</li>
+          <li>أعداد التسبيح وجلساته، وتقدّمك اليومي، وسلسلة أيامك، ونباتات بستانك.</li>
+          <li>إعداداتك، كاللغة والمظهر والهدف اليومي والاهتزاز والصوت وطريقة حساب المواقيت وتفضيلات التنبيهات.</li>
+          <li>آخر موقع معروف بعد تقريبه إلى نحو كيلومتر واحد، إن سمحت بالموقع.</li>
+        </ul>
+        <p>ويحتفظ التطبيق كذلك بسجلّ داخلي لهذه التعديلات على الجهاز نفسه. لا يرسل التطبيق شيئاً من ذلك خارج جهازك، ولا نملك أي وسيلة للوصول إليه؛ وإنما قد يشمله ما تجريه أنت من نسخ احتياطية أو نقل إلى جهاز جديد (انظر «النسخ الاحتياطي»).</p>
+      </section>
+      <section id="ar-location">
+        <h2>الموقع</h2>
+        <p>الموقع اختياري، والتقريبي منه يكفي. ويُستعمل على جهازك وحده لثلاثة أغراض: حساب مواقيت الصلاة، وتحديد اتجاه القبلة، وتصحيح البوصلة نحو الشمال الحقيقي.</p>
+        <p>على أندرويد يطلب التطبيق الموقع التقريبي فقط، وعلى iOS تختار أنت في نافذة النظام بين الموقع الدقيق والتقريبي. وإن لم تسمح بالموقع يظلّ التطبيق يعمل، وتُعرض مواقيت مكة المكرمة مع بيان ذلك على الشاشة.</p>
+        <p>يحدّد نظام التشغيل موقعك بخدمة الموقع في جهازك ووفق إعداداته، أما التطبيق فلا يرسل موقعك إلى أي جهة.</p>
+      </section>
+      <section id="ar-sensors">
+        <h2>البوصلة والمستشعرات</h2>
+        <p>تقرأ بوصلة القبلة مستشعرات الحركة والاتجاه في جهازك لحظةً بلحظة، ولا تُحفظ قراءاتها ولا تُرسل.</p>
+      </section>
+      <section id="ar-notifications">
+        <h2>التنبيهات</h2>
+        <ul>
+          <li>التنبيهات محلية، يجدولها نظام جهازك نفسه، بلا خادم ولا إرسال عن بُعد.</li>
+          <li>لا تظهر إلا إذا سمحت بها في إعدادات جهازك وأبقيتها مفعّلة في إعدادات التطبيق.</li>
+          <li>تُحسب تنبيهات الصلاة من الموقع المحفوظ على جهازك، وتُبنى تذكيرات الذكر من تقدّمك المحفوظ عليه.</li>
+        </ul>
+      </section>
+      <section id="ar-backups">
+        <h2>النسخ الاحتياطي</h2>
+        <ul>
+          <li>على أندرويد: النسخ الاحتياطي السحابي للتطبيق معطّل، فلا تُرفع بياناته إلى نسخ Google الاحتياطية. أمّا نقل البيانات مباشرةً من جهازك القديم إلى الجديد، إن أجريته أنت، فقد يشمل بيانات التطبيق، ولا يمرّ بنا.</li>
+          <li>على iOS: قد تشمل النسخ الاحتياطية التي تجريها لجهازك عبر iCloud أو الحاسوب بيانات التطبيق ضمن نسخة النظام. هذه النسخ تخضع لحسابك لدى Apple وإعداداته، ولا يملك مطوّر التطبيق أي وصول إليها.</li>
+        </ul>
+      </section>
+      <section id="ar-deletion">
+        <h2>حذف بياناتك</h2>
+        <p>تبقى بياناتك على جهازك ما دام التطبيق مثبّتاً. وسحب إذن الموقع يوقف تحديثه، لكن آخر موقع مقرَّب يبقى محفوظاً، وتظلّ تنبيهات الصلاة تُحسب منه، حتى تحذف التطبيق أو تمحو بياناته.</p>
+        <ul>
+          <li>حذف التطبيق من جهازك يمحو بياناته كلها منه.</li>
+          <li>وعلى أندرويد يمكنك محوها دون حذف التطبيق: الإعدادات ← التطبيقات ← زرعة ← التخزين ← محو البيانات (قد تختلف التسميات بين الأجهزة).</li>
+        </ul>
+        <p>وليس لدينا نسخة من بياناتك نستعيدها أو نحذفها، لأن التطبيق لم يرسلها إلينا قط.</p>
+      </section>
+      <section id="ar-permissions">
+        <h2>الأذونات</h2>
+        <p>يمكنك منح أي إذن أو سحبه في أي وقت من إعدادات جهازك، ويظلّ التطبيق يعمل دونه:</p>
+        <ul>
+          <li>الموقع: لمواقيت الصلاة والقبلة وتصحيح البوصلة.</li>
+          <li>التنبيهات: لتنبيهات الصلاة وتذكيرات الذكر.</li>
+          <li>المنبّهات والتذكيرات (على أندرويد): ليصل تنبيه الصلاة في وقته بالضبط.</li>
+        </ul>
+      </section>
+      <section id="ar-children">
+        <h2>الأطفال</h2>
+        <p>لا يجمع التطبيق بيانات من أحد، بمن فيهم الأطفال.</p>
+      </section>
+      <section id="ar-changes">
+        <h2>التغييرات على هذه السياسة</h2>
+        <p>إن تغيّرت هذه السياسة نحدّثها داخل التطبيق وفي صفحتها المنشورة، مع تاريخ سريان جديد.</p>
+      </section>
+      <section id="ar-contact">
+        <h2>التواصل</h2>
+        <p>«زرعة» تطبيق مستقلّ لا تقف خلفه شركة. يُنشر في Google Play باسم المطوّر «زرعة»، وفي App Store باسم صاحب حساب المطوّر، وصاحب هذا الحساب هو المسؤول عن هذه السياسة.</p>
+        <p>لأي سؤال عن الخصوصية أو عن التطبيق، راسلنا على:</p>
+        <p class="contact"><a href="mailto:raghad.developer601@gmail.com" dir="ltr">raghad.developer601@gmail.com</a></p>
+      </section>
+    </article>
+    <article id="en" lang="en" dir="ltr">
+      <h1>Zaraah Privacy Policy</h1>
+      <p class="date">Effective date: 1 November 2026</p>
+      <p class="intro">Zaraah is a dhikr and tasbih counter with a garden that grows as you keep up your remembrance, along with prayer times and a qibla compass. This page explains what the app keeps on your device, why it asks for each permission, and what it never does. In short: the app never sends your data to the developer or anyone else.</p>
+      <section id="en-not-collected">
+        <h2>What the app does not collect</h2>
+        <ul>
+          <li>No account and no sign-in. You use the app without giving it a name, an email address or a phone number.</li>
+          <li>No analytics, no ads, no tracking, and no crash-reporting tools inside the app.</li>
+          <li>The app has no feature that sends data over the internet or receives data from it. It works fully offline.</li>
+          <li>We do not sell or share your data, and we never see anything you keep in the app, because the app never sends it to us.</li>
+          <li>If you have allowed your device to share diagnostics with app developers, Apple or Google may show us crash reports that do not identify you (device model, OS version and where the crash happened); they contain nothing you keep in the app.</li>
+        </ul>
+      </section>
+      <section id="en-stored">
+        <h2>What is stored on your device</h2>
+        <p>The app keeps the following in a local database on your device, so it remembers your progress from one visit to the next:</p>
+        <ul>
+          <li>Your dhikr list, including the exact text of any dhikr you add yourself.</li>
+          <li>Your counts and sessions, daily progress, streak and the plants in your garden.</li>
+          <li>Your settings, such as language, appearance, daily goal, haptics, sound, prayer-time calculation method and notification preferences.</li>
+          <li>Your last known location, rounded to about one kilometre, if you allow location.</li>
+        </ul>
+        <p>The app also keeps an internal log of these changes on the same device. The app never sends any of this off your device, and we have no way to access it; only backups or device transfers you make yourself may include it (see Backups).</p>
+      </section>
+      <section id="en-location">
+        <h2>Location</h2>
+        <p>Location is optional, and an approximate location is enough. It is used only on your device, for three things: calculating prayer times, finding the qibla direction, and correcting the compass to true north.</p>
+        <p>On Android the app requests approximate location only. On iOS you choose between precise and approximate location in the system prompt. If you do not allow location, the app keeps working and shows prayer times for Makkah, clearly labelled on screen.</p>
+        <p>Your operating system determines your location through your device’s location service, under your device settings. The app itself never sends your location anywhere.</p>
+      </section>
+      <section id="en-sensors">
+        <h2>Compass and sensors</h2>
+        <p>The qibla compass reads your device’s motion and heading sensors moment by moment. The readings are neither stored nor sent.</p>
+      </section>
+      <section id="en-notifications">
+        <h2>Notifications</h2>
+        <ul>
+          <li>Notifications are local. Your device itself schedules them, with no server and no remote push.</li>
+          <li>They appear only if you allow them in your device settings and keep them turned on in the app’s settings.</li>
+          <li>Prayer alerts are calculated from the location saved on your device, and dhikr reminders are based on the progress saved there.</li>
+        </ul>
+      </section>
+      <section id="en-backups">
+        <h2>Backups</h2>
+        <ul>
+          <li>On Android: cloud backup for the app is turned off, so the app’s data is not uploaded to Google backups. A direct transfer from your old phone to a new one, if you make one, may include the app’s data, and it does not pass through us.</li>
+          <li>On iOS: backups you make of your device through iCloud or a computer may include the app’s data as part of the system backup. Those backups are governed by your Apple account and its settings, and the developer has no access to them.</li>
+        </ul>
+      </section>
+      <section id="en-deletion">
+        <h2>Deleting your data</h2>
+        <p>Your data stays on your device for as long as the app is installed. Withdrawing location permission stops updates, but the last rounded location stays saved, and prayer alerts keep using it, until you uninstall the app or clear its data.</p>
+        <ul>
+          <li>Uninstalling the app erases all of its data from your device.</li>
+          <li>On Android you can also erase it without uninstalling: Settings › Apps › زرعة › Storage › Clear storage (labels vary between devices).</li>
+        </ul>
+        <p>We hold no copy of your data to restore or delete, because the app never sent it to us.</p>
+      </section>
+      <section id="en-permissions">
+        <h2>Permissions</h2>
+        <p>You can grant or withdraw any permission at any time in your device settings, and the app keeps working without it:</p>
+        <ul>
+          <li>Location: for prayer times, the qibla and compass correction.</li>
+          <li>Notifications: for prayer alerts and dhikr reminders.</li>
+          <li>Alarms &amp; reminders (Android): so a prayer alert arrives exactly on time.</li>
+        </ul>
+      </section>
+      <section id="en-children">
+        <h2>Children</h2>
+        <p>The app collects no data from anyone, including children.</p>
+      </section>
+      <section id="en-changes">
+        <h2>Changes to this policy</h2>
+        <p>If this policy changes, we will update it in the app and on its published page, with a new effective date.</p>
+      </section>
+      <section id="en-contact">
+        <h2>Contact</h2>
+        <p>Zaraah is an independent app with no company behind it. It is published on Google Play under the developer name «زرعة» (Zaraah) and on the App Store under the name of its developer account holder, who is responsible for this policy.</p>
+        <p>For any question about privacy or the app, write to us at:</p>
+        <p class="contact"><a href="mailto:raghad.developer601@gmail.com" dir="ltr">raghad.developer601@gmail.com</a></p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

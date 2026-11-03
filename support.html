@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- لا طلبات خارجية إطلاقاً: لا خطوط ولا سكربتات ولا صور. السطر التالي يفرض ذلك على المتصفّح نفسه. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="دعم تطبيق زرعة: أسئلة شائعة عن المواقيت والموقع والتنبيهات، وبريد التواصل. Zaraah support: FAQ about prayer times, location and notifications, and contact email.">
+  <link rel="icon" href="data:,">
+  <title>الدعم · زرعة | Zaraah Support</title>
+  <style>
+    /* ألوان «زرعة» من src/theme/theme.ts: بيج دافئ وأخضر غابة نهاراً، وحبري عميق ليلاً. */
+    :root {
+      --bg: #F9F8F3;
+      --surface: #FFFFFF;
+      --sunken: #EFEDE4;
+      --text-strong: #1E3A2B;
+      --text-body: #3D5145;
+      --text-muted: #71857A;
+      --primary: #37835C;
+      --link: #2A6949;
+      --tint: #EEF6F0;
+      --border: #DFDACD;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101713;
+        --surface: #18211B;
+        --sunken: #222E26;
+        --text-strong: #F2F6F3;
+        --text-body: #C3D0C8;
+        --text-muted: #8A9A91;
+        --primary: #559F77;
+        --link: #7FBD98;
+        --tint: #222E26;
+        --border: #2F3D34;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text-body);
+      /* خطوط النظام وحدها: لا Google Fonts ولا أي ملفّ يُحمَّل من الشبكة. */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Geeza Pro", "Noto Naskh Arabic", Tahoma, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+    .top {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 20px 16px 8px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px 16px;
+    }
+    .brand {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-strong);
+    }
+    .brand .sep { color: var(--primary); }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; }
+    nav a {
+      display: inline-block;
+      padding: 4px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--link);
+      font-size: 15px;
+      text-decoration: none;
+    }
+    nav a:hover, nav a:focus-visible { background: var(--tint); }
+    main { max-width: 760px; margin: 0 auto; padding: 8px 16px 48px; }
+    article {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 24px 20px;
+      margin: 16px 0 24px;
+    }
+    article[dir="rtl"] { text-align: right; }
+    article[dir="ltr"] { text-align: left; }
+    h1 {
+      margin: 0 0 4px;
+      font-size: 26px;
+      line-height: 1.5;
+      color: var(--text-strong);
+    }
+    h2 {
+      margin: 28px 0 6px;
+      font-size: 19px;
+      line-height: 1.5;
+      color: var(--text-strong);
+    }
+    p { margin: 0 0 10px; }
+    .date { color: var(--text-muted); font-size: 15px; }
+    .intro { margin-top: 12px; }
+    ul, ol { margin: 0 0 10px; padding-inline-start: 22px; }
+    li { margin-bottom: 6px; }
+    li::marker { color: var(--primary); }
+    a { color: var(--link); text-underline-offset: 3px; }
+    a:focus-visible, nav a:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .contact a {
+      font-size: 19px;
+      font-weight: 700;
+      unicode-bidi: isolate;
+      word-break: break-all;
+    }
+    @media (min-width: 600px) {
+      article { padding: 32px 36px; }
+      h1 { font-size: 30px; }
+    }
+
+  </style>
+</head>
+<body>
+  <header class="top">
+    <p class="brand"><span lang="ar">زرعة</span> <span class="sep" aria-hidden="true">·</span> <span lang="en" dir="ltr">Zaraah</span></p>
+    <nav aria-label="التنقّل · Navigation">
+      <a href="#ar" lang="ar">العربية</a>
+      <a href="#en" lang="en" dir="ltr">English</a>
+      <a href="privacy.html" lang="ar">سياسة الخصوصية</a>
+      <a href="privacy.html#en" lang="en" dir="ltr">Privacy Policy</a>
+    </nav>
+  </header>
+  <main>
+    <article id="ar" lang="ar" dir="rtl">
+      <h1>الدعم والأسئلة الشائعة</h1>
+      <p class="intro">«زرعة» تطبيق للذكر والتسبيح: تختار ذكراً وتعدّه بلمسة على دائرة العدّاد، وكلما بلغت هدف يومك زُرعت شجرة دائمة في بستانك. وفيه مواقيت الصلاة وبوصلة القبلة وتنبيهات محلية، وكل ذلك يعمل على جهازك دون اتصال بالإنترنت ودون حساب.</p>
+
+      <section id="ar-prayer-times">
+        <h2>كيف تُحسب مواقيت الصلاة؟</h2>
+        <p>تُحسب المواقيت على جهازك حساباً فلكياً من موضع الشمس في التاريخ وإحداثيات موقعك، فلا يحتاج الحساب إلى إنترنت ولا يُرسل موقعك إلى أي خادم. ويُحسب وقت العصر على قول الجمهور (ظلّ الشيء مثله). ويمكنك اختيار طريقة الحساب من أسفل تبويب «المواقيت»:</p>
+        <ul>
+          <li><strong>أم القرى (مكة المكرمة)</strong>، وهي الافتراضية: الفجر عند 18.5° تحت الأفق، والعشاء بعد المغرب بتسعين دقيقة، وبمئة وعشرين دقيقة في رمضان.</li>
+          <li><strong>رابطة العالم الإسلامي</strong>: الفجر عند 18°، والعشاء عند 17°.</li>
+          <li><strong>الهيئة المصرية العامة للمساحة</strong>: الفجر عند 19.5°، والعشاء عند 17.5°.</li>
+          <li><strong>جامعة العلوم الإسلامية، كراتشي</strong>: الفجر عند 18°، والعشاء عند 18°.</li>
+          <li><strong>الجمعية الإسلامية لأمريكا الشمالية</strong>: الفجر عند 15°، والعشاء عند 15°.</li>
+        </ul>
+        <p>وفي خطوط العرض العليا قد لا تبلغ الشمس الزاوية المطلوبة في بعض أيام السنة، فيذكر التطبيق ذلك صراحةً بدل أن يعرض وقتاً تقديرياً.</p>
+      </section>
+
+      <section id="ar-location">
+        <h2>لماذا يطلب التطبيق موقعي؟ وماذا يحدث إن رفضت؟</h2>
+        <p>يُستعمل الموقع على جهازك وحده لحساب مواقيت الصلاة، وتحديد اتجاه القبلة، وتصحيح البوصلة نحو الشمال الحقيقي. والموقع التقريبي يكفي لذلك، ويُحفظ آخر موقع بعد تقريبه إلى نحو كيلومتر واحد.</p>
+        <p>إن لم تسمح بالموقع يظلّ التطبيق يعمل: تُعرض مواقيت مكة المكرمة مع بيان ذلك على الشاشة، ولا تُجدول تنبيهات الصلاة حتى يُحدَّد موقعك. وإن رفضت الإذن نهائياً فافتح إعدادات التطبيق في جهازك واسمح بالموقع، ثم أغلق التطبيق تماماً وافتحه من جديد.</p>
+      </section>
+
+      <section id="ar-notifications">
+        <h2>لا تصلني التنبيهات، ما الحل؟</h2>
+        <p>التنبيهات محلية يجدولها جهازك نفسه، فإن لم تصل فراجع ما يلي:</p>
+        <ol>
+          <li>أن تكون التنبيهات مفعّلة في «الإعدادات» داخل التطبيق.</li>
+          <li>أن يكون إذن التنبيهات مسموحاً لتطبيق «زرعة» في إعدادات جهازك.</li>
+          <li>أن يكون موقعك محدّداً، لأن تنبيهات الصلاة لا تُجدول قبل ذلك.</li>
+          <li>على أندرويد: استثنِ «زرعة» من تحسين البطارية، فبعض الأجهزة تؤخّر تنبيهات التطبيقات المقيّدة أو تمنعها.</li>
+          <li>على أندرويد 14 وما بعده: افتح معلومات التطبيق في إعدادات الجهاز، واسمح له بـ«المنبّهات والتذكيرات». دون هذا الإذن قد يتأخّر التنبيه عن وقته.</li>
+        </ol>
+        <p>وبعد أي تغيير افتح التطبيق مرة، فهو يعيد جدولة التنبيهات عند فتحه.</p>
+      </section>
+
+      <section id="ar-delete">
+        <h2>كيف أحذف بياناتي؟</h2>
+        <p>يحفظ التطبيق بياناتك على جهازك ولا يرسلها إلى أي جهة، فليس لدينا نسخة منها نستعيدها أو نحذفها. احذف التطبيق من جهازك تُمحَ بياناته كلها منه، وعلى أندرويد يمكنك محوها دون حذفه: الإعدادات ← التطبيقات ← زرعة ← التخزين ← محو البيانات. وعلى iOS قد تبقى نسخة منها داخل نسخك الاحتياطية الخاصة على iCloud أو الحاسوب، وتلك تخضع لحسابك لدى Apple.</p>
+      </section>
+
+      <section id="ar-language-theme">
+        <h2>كيف أغيّر اللغة أو المظهر؟</h2>
+        <p>من تبويب «الإعدادات»: اختر «اللغة» للتبديل بين العربية والإنجليزية، واختر «المظهر» بين «حسب النظام» و«فاتح» و«داكن». وتبديل اللغة يغيّر نصّ الواجهة فقط، ويبقى ترتيب الشاشة كما هو.</p>
+      </section>
+
+      <section id="ar-privacy">
+        <h2>الخصوصية</h2>
+        <p>لا حساب ولا تحليلات ولا إعلانات، ولا ميزة في التطبيق ترسل بيانات أو تستقبلها. التفاصيل كاملة في <a href="privacy.html">سياسة الخصوصية</a>.</p>
+      </section>
+
+      <section id="ar-contact">
+        <h2>التواصل</h2>
+        <p>لأي سؤال أو ملاحظة أو مشكلة، راسلنا على:</p>
+        <p class="contact"><a href="mailto:raghad.developer601@gmail.com" dir="ltr">raghad.developer601@gmail.com</a></p>
+      </section>
+    </article>
+    <article id="en" lang="en" dir="ltr">
+      <h1>Support and FAQ</h1>
+      <p class="intro">Zaraah is a dhikr and tasbih counter: pick a dhikr and count it with a tap on the counter circle, and each time you reach your daily goal a lasting tree is planted in your garden. It also has prayer times, a qibla compass and local notifications, all working on your device with no internet connection and no account.</p>
+
+      <section id="en-prayer-times">
+        <h2>How are prayer times calculated?</h2>
+        <p>Prayer times are calculated on your device, astronomically, from the sun’s position on the date and your location’s coordinates. The calculation needs no internet and your location is never sent to a server. Asr follows the majority opinion (an object’s shadow equal to its length). You can choose the calculation method at the bottom of the Prayer tab:</p>
+        <ul>
+          <li><strong>Umm al-Qura (Makkah)</strong>, the default: Fajr at 18.5° below the horizon, Isha 90 minutes after Maghrib, and 120 minutes during Ramadan.</li>
+          <li><strong>Muslim World League</strong>: Fajr at 18°, Isha at 17°.</li>
+          <li><strong>Egyptian General Authority of Survey</strong>: Fajr at 19.5°, Isha at 17.5°.</li>
+          <li><strong>University of Islamic Sciences, Karachi</strong>: Fajr at 18°, Isha at 18°.</li>
+          <li><strong>Islamic Society of North America</strong>: Fajr at 15°, Isha at 15°.</li>
+        </ul>
+        <p>At high latitudes the sun may not reach the required angle on some days of the year. The app says so plainly instead of showing an estimated time.</p>
+      </section>
+
+      <section id="en-location">
+        <h2>Why does the app ask for my location, and what if I say no?</h2>
+        <p>Your location is used only on your device, to calculate prayer times, find the qibla direction and correct the compass to true north. An approximate location is enough, and the last location is saved rounded to about one kilometre.</p>
+        <p>If you do not allow location, the app keeps working: it shows prayer times for Makkah, clearly labelled, and no prayer alerts are scheduled until your location is set. If you denied the permission permanently, open the app’s settings on your device, allow location, then fully close the app and open it again.</p>
+      </section>
+
+      <section id="en-notifications">
+        <h2>Notifications are not arriving. What can I do?</h2>
+        <p>Notifications are local and scheduled by your device itself. If they do not arrive, check the following:</p>
+        <ol>
+          <li>Notifications are turned on in the app’s Settings tab.</li>
+          <li>«زرعة» (Zaraah) is allowed to send notifications in your device settings.</li>
+          <li>Your location is set, since prayer alerts are not scheduled before that.</li>
+          <li>On Android: exclude «زرعة» (Zaraah) from battery optimisation, as some devices delay or block notifications from restricted apps.</li>
+          <li>On Android 14 and later: open the app info page in your device settings and allow “Alarms &amp; reminders”. Without it, an alert may arrive later than its exact time.</li>
+        </ol>
+        <p>After any change, open the app once; it reschedules notifications whenever it opens.</p>
+      </section>
+
+      <section id="en-delete">
+        <h2>How do I delete my data?</h2>
+        <p>The app keeps your data on your device and never sends it anywhere, so we hold no copy to restore or delete. Uninstall the app and all of its data is erased from the device; on Android you can also erase it without uninstalling, under Settings › Apps › زرعة › Storage › Clear storage. On iOS a copy may remain inside your own iCloud or computer backups, which are governed by your Apple account.</p>
+      </section>
+
+      <section id="en-language-theme">
+        <h2>How do I change the language or appearance?</h2>
+        <p>In the Settings tab: choose Language to switch between Arabic and English, and choose Appearance between System, Light and Dark. Switching the language changes only the interface text; the screen layout stays the same.</p>
+      </section>
+
+      <section id="en-privacy">
+        <h2>Privacy</h2>
+        <p>No account, no analytics, no ads, and no feature in the app sends or receives data. The full details are in the <a href="privacy.html#en">privacy policy</a>.</p>
+      </section>
+
+      <section id="en-contact">
+        <h2>Contact</h2>
+        <p>For any question, feedback or problem, write to us at:</p>
+        <p class="contact"><a href="mailto:raghad.developer601@gmail.com" dir="ltr">raghad.developer601@gmail.com</a></p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
